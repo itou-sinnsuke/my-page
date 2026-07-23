@@ -4,60 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="icon.png">
   <title>my-page</title>
 </head>
 <body>
-    <header>
-      <h1>フルスタっクエンジニアへの道、一歩ずつ！</h1>
-    </header>
-    <main>
-      <section class="about">
+  <nav class="top">
+    <div class="nav-indicator"></div>
+    <a href="#home" class="nav-link active">home</a>
+    <a href="#about" class="nav-link">about</a>
+    <a href="#skills" class="nav-link">skills</a>
+    <a href="#works" class="nav-link">works</a>
+    <a href="#contact" class="nav-link">contact</a>
+  </nav>
+  <header class="header">
+    <section id="home">
+      <div class="hero-content">
+        <p class="hero-subtitle">
+          AI × WEB DEVELOPMENT
+        </p >
+        <h1 class="header-title">フルスタックエンジニアへの道<br>一歩ずつ。</h1>
+      </div>
+      <div class="scroll-indicator">
+        <span>SCROLL</span>
+        <div class="header-ico">↓</div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section id="about">
+      <div class="main-title">01 --- About</div>
+      <div class="about">
         <div class="me">
           <img class="photo" src="./img/photos/me.jpg" alt="me">
           <div class="info">
-            <p><strong>姓名：</strong>王遠志</p>
-            <p><strong>性別：</strong>男</p>
-            <p><strong>生年月日：</strong>2001/04/19</p>
-            <p><strong>出身：</strong>中国</p>
-            <p><strong>星座：</strong>牡羊座</p>
-            <p><strong>専攻：</strong>IT開発研究</p>
+            <div class="info-item"><span class="info-key">名前</span><span class="info-val">王遠志</span></div>
+            <div class="info-item"><span class="info-key">性別</span><span class="info-val">男</span></div>
+            <div class="info-item"><span class="info-key">生年月日</span><span class="info-val">2001/04/19</span></div>
+            <div class="info-item"><span class="info-key">出身</span><span class="info-val">中国</span></div>
+            <div class="info-item"><span class="info-key">星座</span><span class="info-val">牡羊座</span></div>
+            <div class="info-item"><span class="info-key">専攻</span><span class="info-val">IT開発研究</span></div>
           </div>
         </div>
         <div class="xinxi">
-          <h2>人生目標</h2>
-          <p>フルスタっクエンジニアを目指して、将来AIを活用しながら、実際の問題を解決するように！</p>
-          <h2>教育履歴</h2>
-          <p>2024年~2026年・・・メリック日本語学校</p>
-          <p>2026年~今・・・ECCコンピュータ専門学校</p>
-          <h2>自己紹介</h2>
-          <p>中国出身で、フルスタっクエンジニアを目指して努力している王遠志と申します。</p>
-          <p>私はもともと中国で口腔医学を専攻し、国家資格を取得した後、約1年間歯科医療の仕事に従事していました。</p>
-          <p>その経験を通して、人と向き合う仕事のやりがいを感じる一方で、自分は医療現場よりも、IT技術を活用してより多くの人の役に立つ仕組みを作ることに強く興味を持つようになりました。</p>
-          <p>また、社会のさまざまな分野でIT技術の重要性がますます高まっていることを実感し、本格的にITを学ぶことを決意しました。そのため、日本に留学し、IT開発を専門的に学んでいます。</p>
+          <div class="xinxi-item">
+            <h3>人生目標</h3>
+            <p>フルスタっクエンジニアを目指して、将来AIを活用しながら、実際の問題を解決するように！</p>
+          </div>
+          <div class="xinxi-item">
+            <h3>教育履歴</h3>
+            <div class="timeline">
+              <div class="tl-item">
+                <span class="tl-date">2024 — 2026</span>
+                <span class="tl-text">メリック日本語学校</span>
+              </div>
+              <div class="tl-item">
+                <span class="tl-date">2026 — 今</span>
+                <span class="tl-text">ECCコンピュータ専門学校</span>
+              </div>
+            </div>
+          </div>
+          <div class="xinxi-item">
+            <h3>自己紹介</h3>
+            <p>中国出身で、フルスタックエンジニアを目指して努力している王遠志と申します。もともと口腔医学を専攻し、国家資格を取得した後、約1年間歯科医療の仕事に従事していました。</p>
+            <p>IT技術を活用してより多くの人の役に立つ仕組みを作ることに強く興味を持ち、本格的にITを学ぶことを決意。現在は日本でIT開発を専門的に学んでいます。</p>
+          </div>
         </div>
-      </section>
-      <section class="skills">
-        <div class="frontend">
-          <h3>FRONTEND</h3>
-          <div class="card">HTML</div>
-          <div class="card">CSS</div>
-          <div class="card">JavaScript</div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="main-title">02 --- Skills</div>
+      <div class="skills">
+        <div class="skills-group">
+          <h3 class="skills-title">FRONTEND</h3>
+          <div class="cards">
+            <div class="card">HTML</div>
+            <div class="card">CSS</div>
+            <div class="card">JavaScript</div>
+          </div>
         </div>
-        <div class="backend">
-          <h3>BACKEND</h3>
-          <div class="card">Java</div>
-          <div class="card">Python</div>
+        <div class="skills-group">
+          <h3 class="skills-title">BACKEND</h3>
+          <div class="cards">
+            <div class="card">Java</div>
+            <div class="card">Python</div>
+          </div>
         </div>
-        <div class="tool">
-          <h3>AI&TOOL</h3>
-          <div class="card">Git Hub</div>
-          <div class="card">Git</div>
-          <div class="card">ChatGPT</div>
+        <div class="skills-group">
+          <h3 class="skills-title">AI&TOOL</h3>
+          <div class="cards">
+            <div class="card">GitHub</div>
+            <div class="card">Git</div>
+            <div class="card">ChatGPT</div>
+            <div class="card">Figma</div>
+          </div>
         </div>
-      </section>
-      <section class="works"></section>
-      <section class="contact"></section>
-    </main>
-    <footer></footer>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="main-title">03 — Works</div>
+      <div class="works-group">
+        <div class="works-card">
+          <a href="https://itou-sinnsuke.github.io/love-story/">
+            <img class="works-img" src="./img/works/love-story.png" alt="love-story">
+          </a>
+          <div class="works-content">
+            <span class="works-title">Love Story Website</span>
+            <div class="works-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <p class="works-text">恋人との思い出を記録するロマンティックなウェブサイト。タイムライン・フォトギャラリー・メッセージボードなど複数機能を実装。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="main-title">04 --- Contact</div>
+      <div class="contact-text">
+        <h2>Let's build something together.</h2>
+        <p>ご覧いただきありがとうございました。<br>お気軽にご連絡ください。</p>
+      </div>
+      <div class="contact-group">
+          <a class="contact-item" href="https://github.com/itou-sinnsuke">
+            <img class="contact-img" src="./img/contact/GitHub.jpg" alt="github">
+            <span>GitHub</span>
+          </a>
+          <a class="contact-item" href="mailto:itousinnsuke@gmail.com">
+            <img class="contact-img" src="./img/contact/gmail.jpg" alt="Gmail">
+            <span>Gmail</span>
+          </a>
+          <button class="contact-item" id="wechat-btn">
+            <img class="contact-img" src="./img/contact/WeChat.jpg" alt="WeChat">
+            <span>WeChat</span>
+          </button>
+          <button class="contact-item" id="qq-btn">
+            <img class="contact-img" src="./img/contact/QQ.jpg" alt="QQ">
+            <span>QQ</span>
+          </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2026 Wang Yuanzhi · Built with HTML / CSS / JavaScript</p>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <img class="Wechat-QR" src="./img/contact/WeChat-QR.jpg" alt="WeChat-QR" id="wechat-qr">
+      <img class="QQ-QR" src="./img/contact/QQ-QR.png" alt="QQ-QR" id="qq-qr">
+    </div>
+  </div>
+<script src="./js/index.js"></script>
 </body>
 </html>
