@@ -473,7 +473,24 @@ footer {
     padding: 8px 10px;
   }
   header {
-    background-position: 60% center;
+    background-position: 70% center;
+  }
+  .top {
+    width: 95%;
+    justify-content: space-between;
+  }
+  .nav-link {
+    width: auto;
+    flex: 1;
+    height: 42px;
+    font-size: 14px;
+  }
+  .nav-link.active {
+    background: rgba(255,255,255,.18);
+    border-radius: 999px;
+  }
+  .nav-indicator {
+    display: none;
   }
   .container{
     width:100%;
