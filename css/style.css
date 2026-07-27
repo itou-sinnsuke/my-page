@@ -79,8 +79,8 @@ body {
 }
 .header{
   position:relative;
-  height:100vh;
-  min-height:700px;
+  width: 100%;
+  min-height:100vh;
   background-image:url("../img/background/header.png");
   background-size:cover;
   background-position:center;
@@ -458,4 +458,120 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 16px;
+}
+@media  screen and (max-width: 768px) {
+  html{
+    font-size:15px;
+  }
+  section{
+    padding:60px 8%;
+  }
+  .container{
+    width:100%;
+  }
+  .main-title{
+    font-size:2rem;
+    margin-bottom:40px;
+  }
+  .hero{
+    text-align:center;
+    padding:0 10%;
+  }
+  .title{
+    font-size:2.3rem;
+    line-height:1.3;
+  }
+  .subtitle{
+    font-size:1rem;
+  }
+  .text{
+    font-size:0.95rem;
+  }
+  .about{
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    gap:24px;
+    width:100%;
+  }
+  .me{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+    max-width: none;
+    padding: 20px;
+  }
+  .photo{
+    width:180px;
+    height:180px;
+    margin-bottom:30px;
+  }
+  .info{
+    width:100%;
+  }
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .info-key {
+    width: auto;
+  }
+  .info-val {
+    width: 100%;
+    text-align: left;
+  }
+  .xinxi {
+    flex: none;
+    width: 100%;
+  }
+  .xinxi-item {
+    padding: 22px;
+  }
+  .skills-list{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .skill-card{
+    padding:20px;
+  }
+  .skill-title{
+    font-size:1.2rem;
+  }
+  .skill-text{
+    font-size:0.95rem;
+    line-height:1.7;
+  }
+  .work-card{
+    width:100%;
+  }
+  .work-image{
+    width:100%;
+    height:auto;
+  }
+  .work-content{
+    padding:18px;
+  }
+  .work-title{
+    font-size:1.2rem;
+  }
+  .work-text{
+    font-size:0.95rem;
+  }
+  .contact-list{
+    flex-direction:column;
+    gap:18px;
+  }
+  .contact-item{
+    width:100%;
+  }
+  .contact-link,
+  .contact-button{
+    width:100%;
+    justify-content:center;
+  }
+  footer{
+    padding:25px 10%;
+  }
 }
