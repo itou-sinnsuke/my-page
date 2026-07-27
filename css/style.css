@@ -313,7 +313,7 @@ section {
   flex: 1;
 }
 .card {
-  padding: 16px 20px;
+  padding: 14px 16px;
   border-radius: 14px;
   background: #f6f9fd;
   font-size: 14px;
@@ -324,7 +324,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  min-height: 54px;
+  min-height: 48px;
 }
 .card:hover {
   transform: translateX(8px);
@@ -529,9 +529,14 @@ footer {
   .xinxi-item {
     padding: 22px;
   }
-  .skills-list{
-    grid-template-columns:1fr;
-    gap:20px;
+  .skills {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .skills-group {
+    width: 100%;
+    min-height: auto;
+    padding: 22px;
   }
   .skill-card{
     padding:20px;
