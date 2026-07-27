@@ -466,6 +466,15 @@ footer {
   section{
     padding:60px 8%;
   }
+  nav {
+    width: 96%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 10px;
+  }
+  header {
+    background-position: 60% center;
+  }
   .container{
     width:100%;
   }
@@ -478,8 +487,8 @@ footer {
     padding:0 10%;
   }
   .title{
-    font-size:2.3rem;
-    line-height:1.3;
+    font-size:2rem;
+    line-height:1.2;
   }
   .subtitle{
     font-size:1rem;
@@ -548,8 +557,12 @@ footer {
     font-size:0.95rem;
     line-height:1.7;
   }
+  .works {
+    padding: 0;
+  }
   .work-card{
     width:100%;
+    margin: auto;
   }
   .work-image{
     width:100%;
